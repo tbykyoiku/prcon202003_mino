@@ -1,0 +1,106 @@
+/*
+ * ツリーベル四日市事業所
+ * 第3回PGコンテスト用ベースすごろくプログラム
+ * CSSファイル
+ */
+
+/* 更新履歴 */
+/* 2020 1/16 和田 新規作成 */
+/* 2020 1/16 美濃 改修 */
+
+#gameArea {
+	display: none;
+	    box-shadow: 0 0 0 2px #FFF inset;
+	
+}
+
+#boardArea {
+	display:block;
+	width:90%;
+	height:550px;
+	border:1px solid black;
+	overflow: scroll;
+
+	background-image:url(unnamed.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background height cover;
+	
+	border: 2px solid #000;
+    border-radius: 5px;
+   // box-shadow: 0 0 0 4px #000 inset;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 0 2px #FFF inset;
+	white-space: pre;
+	overflow: hidden;
+  	-webkit-animation: ozDq 3s steps(70, end) ;
+
+}
+#board span {
+	margin:3px;
+}
+.boardMass {
+	border:1px solid black;
+	width:45px;
+	height:45px;
+	display:inline-block;
+	vertical-align: top;
+	border-radius: 40px 40px 40px 40px;
+	background-color:white;
+	background-repeat: no-repeat;
+
+
+}
+.karaMass {
+	width:47px;
+	height:35px;
+	display:inline-block;
+}
+
+.playerMassIcon {
+	display: inline-block;
+	
+}
+#dice {
+	display:inline-block;
+	width:45px;
+	height:30px;
+	text-align:center;
+	border:1px solid black;
+}
+.disp-img{
+    background-image:url"C:\プログラミング練習用\Sugoroku\css\unnamed.jpg"); /* 画像のURLを指定       */
+    background-repeat:  no-repeat;                /* 画像の繰り返しを指定  */              
+    width:auto;                                   /* 横幅のサイズを指定    */
+    height:auto;                                 /* 縦幅のサイズを指定    */
+}
+textarea {
+	display:block;
+    resize: none;
+    min-height: 100px;
+    max-height: 150px;
+	width:50%;
+	color: #FFF;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 0 4px #000 inset;
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0 0 0 2px #FFF inset;
+	white-space: pre;
+	overflow: hidden;
+  	-webkit-animation: ozDq 3s steps(70, end) ;
+}
+textarea:after {
+  -webkit-animation: ozPulse 1s infinite ease;
+  /* プロパティは順に name, duration, iteration-count, timing-function です */
+}
+@-webkit-keyframes ozDq { from { width: 0; } } /* 開始地点の指定 */
+@-moz-keyframes ozDq { from { width: 0 } }
+@-webkit-keyframes ozPulse { { /* 透明度の指定 */
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-moz-keyframes ozPulse {
+from { opacity: 1; }
+to { opacity: 0; }
+}
